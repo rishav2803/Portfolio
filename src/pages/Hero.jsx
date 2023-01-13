@@ -5,7 +5,7 @@ import { motion as m } from "framer-motion";
 const Hero = ({ onProject }) => {
   const [typedText, setTypedText] = useState("");
   const navigate = useNavigate();
-  const text = "Rishav Thapliyal";
+  const text = "Rishav-Thapliyal";
 
   const projectsHandler = () => {
     console.log("hello world");
