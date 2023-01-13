@@ -51,11 +51,11 @@ const Hero = ({ onProject }) => {
         </div>
         <div className="flex justify-center items-center">
           <img
-            src="public\github.png"
+            src={gitimg}
             className="hover:cursor-pointer mr-3 object-contain w-10 "
           />
           <img
-            src="public\mail.png"
+            src={mailimg}
             className="mr-2 hover:cursor-pointer  object-contain w-10"
           />
         </div>
