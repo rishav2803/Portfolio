@@ -57,6 +57,7 @@ const Hero = ({ onProject }) => {
           <img
             src={mailimg}
             className="mr-2 hover:cursor-pointer  object-contain w-10"
+            alt="load man "
           />
         </div>
 
