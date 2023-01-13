@@ -1,7 +1,7 @@
-import ticimg from "../public/tic.png";
-import bankimg from "../public/bank.png";
-import chatimg from "../public/chatapp.png";
-import movieimg from "../public/movie.png";
+import ticimg from "./assets/tic.png";
+import bankimg from "./assets/bank.png";
+import chatimg from "./assets/chatapp.png";
+import movieimg from "./assets/movie.png";
 
 
 export const projects = [

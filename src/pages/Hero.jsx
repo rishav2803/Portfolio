@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion as m } from "framer-motion";
-import gitimg from "../../public/github.png";
-import mailimg from "../../public/mail.png";
+import gitimg from "../assets/github.png";
+import mailimg from "../assets/mail.png";
 
 const Hero = ({ onProject }) => {
   const [typedText, setTypedText] = useState("");
