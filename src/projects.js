@@ -1,6 +1,3 @@
-import ticimg from "./assets/Tic.png"
-
-
 export const projects = [
     {
         name: "Tic Tac Toe Game",
@@ -15,7 +12,7 @@ export const projects = [
             "Typescript",
             "Go"
         ],
-        src: ticimg,
+        src: "public/assets/Tic.png",
         git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe"
 
     },
@@ -32,7 +29,7 @@ export const projects = [
             "NodeJs",
             "mysql",
         ],
-        src: "src/assets/Screenshot (661).png",
+        src: "public/assets/Screenshot (661).png",
         git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe"
     },
     {
@@ -48,7 +45,7 @@ export const projects = [
             "NodeJs",
             "mysql",
         ],
-        src: "src/assets/movie.png",
+        src: "public/assets/movie.png",
         git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe"
     },
     {
@@ -64,7 +61,7 @@ export const projects = [
             "NodeJs",
             "mysql",
         ],
-        src: "src/assets/bank.png",
+        src: "public/assets/bank.png",
         git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe"
     },
 ]

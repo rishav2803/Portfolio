@@ -4,7 +4,7 @@ const Frontend = ({ frontend }) => {
       {frontend.map((f) => {
         return (
           <div className="flex justify-center items-center border-solid border-2 border-alt-text-color py-2 rounded-lg text-title-color">
-            <i className={`${f.src} text-2xl`}></i>
+            <i className={`${f.src} text-2xl sm:text-sm`}></i>
             <h1 className="ml-2  sm:text-lg font-bold">{f.name}</h1>
           </div>
         );
