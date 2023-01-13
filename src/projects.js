@@ -12,7 +12,7 @@ export const projects = [
             "Typescript",
             "Go"
         ],
-        src: "public/assets/Tic.png",
+        src: "public/Tic.png",
         git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe"
 
     },
@@ -29,7 +29,7 @@ export const projects = [
             "NodeJs",
             "mysql",
         ],
-        src: "public/assets/Screenshot (661).png",
+        src: "public/Screenshot (661).png",
         git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe"
     },
     {
@@ -45,7 +45,7 @@ export const projects = [
             "NodeJs",
             "mysql",
         ],
-        src: "public/assets/movie.png",
+        src: "public/movie.png",
         git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe"
     },
     {
@@ -61,7 +61,7 @@ export const projects = [
             "NodeJs",
             "mysql",
         ],
-        src: "public/assets/bank.png",
+        src: "public/bank.png",
         git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe"
     },
 ]
