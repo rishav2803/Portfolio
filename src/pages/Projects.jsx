@@ -45,10 +45,10 @@ const Projects = ({ onHome, onSkills }) => {
         ;
       </m.div>
       <div className="">
-        {/* <i
+        <i
           className="fa fa-caret-left fixed left-4 bottom-[44%] text-7xl text-title-color hover:cursor-pointer hover:animate-none animate-bounce"
           onClick={homeHandler}
-        ></i> */}
+        ></i>
         <i
           className="fa fa-caret-right fixed right-4 bottom-[44%] text-7xl text-title-color hover:cursor-pointer hover:animate-none animate-bounce"
           onClick={skillsHandler}
