@@ -1,3 +1,6 @@
+import ticimg from "./assets/Tic.png"
+
+
 export const projects = [
     {
         name: "Tic Tac Toe Game",
@@ -12,7 +15,7 @@ export const projects = [
             "Typescript",
             "Go"
         ],
-        src: "src/assets/Tic.png",
+        src: ticimg,
         git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe"
 
     },
