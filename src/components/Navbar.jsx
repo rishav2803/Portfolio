@@ -51,11 +51,11 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
       <ul
         className={`
        uppercase flex items-center justify-end sm:justify-center
-       py-6 
-       text-title-color left-0 w-full sm:mt-3 `}
+       py-3
+       text-title-color left-0 w-full `}
       >
         <li
-          className={`mr-8 sm:mb-4  ${
+          className={`mr-8 sm:mb-2  ${
             home === true ? "bg-alt-background-color p-3 rounded-lg" : ""
           }`}
         >
@@ -64,7 +64,7 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
           </Link>
         </li>
         <li
-          className={`mr-8  sm:mb-4 ${
+          className={`mr-8  sm:mb-2 ${
             project === true ? "bg-alt-background-color p-3 rounded-lg" : ""
           }`}
         >
@@ -73,7 +73,7 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
           </Link>
         </li>
         <li
-          className={`mr-8 sm:mb-4 ${
+          className={`mr-8 sm:mb-2 ${
             skills === true ? "bg-alt-background-color p-3 rounded-lg" : ""
           }`}
         >
