@@ -46,7 +46,7 @@ const Hero = ({ onProject }) => {
           </p>
         </div>
         <div className="flex justify-center items-center">
-          <i class="devicon-github-original text-5xl mr-3 sm:text-3xl text-title-color"></i>
+          <i class="devicon-github-original text-4xl mr-3 sm:text-3xl text-title-color"></i>
           {/* <img
             src={gitimg}
             className="hover:cursor-pointer mr-3 object-contain w-10 "
@@ -56,7 +56,7 @@ const Hero = ({ onProject }) => {
             className="mr-2 hover:cursor-pointer  object-contain w-10"
             alt="load man "
           /> */}
-          <i class="devicon-linkedin-plain text-5xl sm:text-3xl text-title-color"></i>
+          <i class="devicon-linkedin-plain text-4xl sm:text-3xl text-title-color"></i>
         </div>
 
         <div

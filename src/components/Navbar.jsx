@@ -17,7 +17,7 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
   };
 
   return (
-    <nav className="flex justify-between sm:mx-5 items-center mx-14">
+    <nav className="flex justify-between  items-center sm:mx-0 mx-14 ">
       <div className="py-6 sm:hidden">
         <h1 className="text-title-color font-semibold text-2xl ">
           RishavThapliyal
@@ -51,12 +51,12 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
       <ul
         className={`
        uppercase flex items-center justify-end sm:justify-center
-       py-6
+       sm:py-3 py-6 
        text-title-color left-0 w-full `}
       >
         <li
           className={`mr-8 sm:mb-2  ${
-            home === true ? "text-alt-text-color " : ""
+            home === true ? "bg-alt-background-color p-3 rounded-lg" : ""
           }`}
         >
           <Link to={"/"} onClick={clickHandler}>
@@ -65,7 +65,7 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
         </li>
         <li
           className={`mr-8  sm:mb-2 ${
-            project === true ? "text-alt-text-color" : ""
+            project === true ? "bg-alt-background-color p-3 rounded-lg" : ""
           }`}
         >
           <Link to={"/projects"} onClick={clickHandler}>
@@ -74,7 +74,7 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
         </li>
         <li
           className={`mr-8 sm:mb-2 ${
-            skills === true ? "text-alt-text-color " : ""
+            skills === true ? "bg-alt-background-color p-3 rounded-lg" : ""
           }`}
         >
           <Link to="/skills" onClick={clickHandler}>
