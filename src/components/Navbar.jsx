@@ -55,7 +55,7 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
        text-title-color left-0 w-full `}
       >
         <li
-          className={`mr-8 sm:mb-2  ${
+          className={`mr-8 ml-5 sm:mb-2  ${
             home === true ? "bg-alt-background-color p-3 rounded-lg" : ""
           }`}
         >
