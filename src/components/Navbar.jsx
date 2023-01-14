@@ -51,12 +51,12 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
       <ul
         className={`
        uppercase flex items-center justify-end sm:justify-center
-       py-3
+       py-6
        text-title-color left-0 w-full `}
       >
         <li
           className={`mr-8 sm:mb-2  ${
-            home === true ? "bg-alt-background-color p-3 rounded-lg" : ""
+            home === true ? "text-alt-text-color " : ""
           }`}
         >
           <Link to={"/"} onClick={clickHandler}>
@@ -65,7 +65,7 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
         </li>
         <li
           className={`mr-8  sm:mb-2 ${
-            project === true ? "bg-alt-background-color p-3 rounded-lg" : ""
+            project === true ? "text-alt-text-color" : ""
           }`}
         >
           <Link to={"/projects"} onClick={clickHandler}>
@@ -74,7 +74,7 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
         </li>
         <li
           className={`mr-8 sm:mb-2 ${
-            skills === true ? "bg-alt-background-color p-3 rounded-lg" : ""
+            skills === true ? "text-alt-text-color " : ""
           }`}
         >
           <Link to="/skills" onClick={clickHandler}>
