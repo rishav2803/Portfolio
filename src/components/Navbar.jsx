@@ -23,6 +23,7 @@ const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
           RishavThapliyal
         </h1>
       </div>
+
       {/* <div className={`py-6 text-3xl text-title-color`}>
         <a
           href="#"

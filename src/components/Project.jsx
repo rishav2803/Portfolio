@@ -1,6 +1,6 @@
 const Project = ({ name, tags, f, img, repo }) => {
   return (
-    <div className="relative  rounded-lg shadow-2xl sm:p-0 p-0">
+    <div className="relative rounded-lg shadow-2xl sm:p-0 p-0 h-fit ">
       <div className="relative">
         <img
           src={img}

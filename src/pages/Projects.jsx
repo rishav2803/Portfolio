@@ -23,7 +23,7 @@ const Projects = ({ onHome, onSkills }) => {
   return (
     <Card>
       <m.div
-        className="w-4/5 mx-auto  mt-4
+        className="w-4/5 sm:w-[90%] mx-auto  mt-4
         grid sm:grid-rows-4 grid-rows-2 grid-cols-2 sm:grid-cols-1 gap-4"
       >
         {projects.map((project) => {
