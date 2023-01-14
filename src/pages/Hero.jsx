@@ -31,10 +31,6 @@ const Hero = ({ onProject }) => {
     <m.div
       className="w-full  mx-auto flex justify-center items-center"
       style={{ height: "76vh" }}
-      initial={{ x: "100%" }}
-      animate={{ x: "0%" }}
-      exit={{ opacity: 1 }}
-      transition={{ duration: 0.75, ease: "easeOut" }}
     >
       <div className="flex-col">
         <span className="sm:text-2xl text-5xl text-title-color">Hi,</span>
@@ -50,22 +46,24 @@ const Hero = ({ onProject }) => {
           </p>
         </div>
         <div className="flex justify-center items-center">
-          <img
+          <i class="devicon-github-original text-5xl mr-3 sm:text-3xl text-title-color"></i>
+          {/* <img
             src={gitimg}
             className="hover:cursor-pointer mr-3 object-contain w-10 "
-          />
-          <img
+          /> */}
+          {/* <img
             src={mailimg}
             className="mr-2 hover:cursor-pointer  object-contain w-10"
             alt="load man "
-          />
+          /> */}
+          <i class="devicon-linkedin-plain text-5xl sm:text-3xl text-title-color"></i>
         </div>
 
         <div
           className="flex justify-center items-center"
           onClick={projectsHandler}
         >
-          <i className="fa fa-caret-right absolute right-10 bottom-[44%] text-7xl text-title-color hover:cursor-pointer hover:animate-none animate-bounce"></i>
+          <i className="fa fa-caret-right absolute sm:hidden right-10 bottom-[44%] text-7xl text-title-color hover:cursor-pointer hover:animate-none animate-bounce"></i>
           {/* <i className="fa fa-caret-down block  absolute bottom-0  text-7xl text-background-color hover:cursor-pointer hover:animate-none animate-bounce"></i> */}
         </div>
       </div>

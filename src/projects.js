@@ -36,7 +36,7 @@ export const projects = [
             "mysql",
         ],
         src: chatimg,
-        git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe"
+        git: "https://github.com/rishav2803/chat_application"
     },
     {
         name: "Movie and Series Review System",
@@ -52,7 +52,7 @@ export const projects = [
             "mysql",
         ],
         src: movieimg,
-        git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe"
+        git: "https://github.com/rishav2803/Movie-review-"
     },
     {
         name: "Bank Management System",

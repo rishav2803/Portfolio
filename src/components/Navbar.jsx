@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-const NavBar = ({ project, home, skills, onHome, onProject }) => {
+const NavBar = ({ project, home, skills, onHome, onProject, onSkills }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   const clickHandler = (e) => {
@@ -11,16 +11,19 @@ const NavBar = ({ project, home, skills, onHome, onProject }) => {
     if (text === "PROJECTS") {
       onProject(true);
     }
+    if (text === "SKILLS") {
+      onSkills(true);
+    }
   };
 
   return (
-    <nav className="flex justify-between sm:mx-5 items-center mx-14 ">
-      <div className="py-6">
-        <h1 className="text-title-color font-semibold text-2xl sm:text-base">
+    <nav className="flex justify-between sm:mx-5 items-center mx-14">
+      <div className="py-6 sm:hidden">
+        <h1 className="text-title-color font-semibold text-2xl ">
           RishavThapliyal
         </h1>
       </div>
-      <div className={`py-6 text-3xl text-title-color`}>
+      {/* <div className={`py-6 text-3xl text-title-color`}>
         <a
           href="#"
           className={`${showMenu === true ? "sm:hidden" : "sm:block"} hidden`}
@@ -43,15 +46,16 @@ const NavBar = ({ project, home, skills, onHome, onProject }) => {
             <i className="fa fa-times"></i>
           </span>
         </a>
-      </div>
+      </div> */}
+
       <ul
-        className={`${showMenu === true ? "sm:block" : "sm:hidden"}
-       sm:absolute top-14 uppercase flex items-center justify-end
-       py-6 sm:flex-col sm:items-center sm:justify-center
-       text-title-color left-0 w-full mr-auto  sm:bg-background-color sm:p-5 sm:mt-5 sm:h-[90vh] sm:z-10`}
+        className={`
+       uppercase flex items-center justify-end sm:justify-center
+       py-6 
+       text-title-color left-0 w-full sm:mt-3 `}
       >
         <li
-          className={`mr-8 sm:w-full sm:mb-4 ${
+          className={`mr-8 sm:mb-4  ${
             home === true ? "bg-alt-background-color p-3 rounded-lg" : ""
           }`}
         >
@@ -60,7 +64,7 @@ const NavBar = ({ project, home, skills, onHome, onProject }) => {
           </Link>
         </li>
         <li
-          className={`mr-8 sm:full sm:mb-4 ${
+          className={`mr-8  sm:mb-4 ${
             project === true ? "bg-alt-background-color p-3 rounded-lg" : ""
           }`}
         >
@@ -69,7 +73,7 @@ const NavBar = ({ project, home, skills, onHome, onProject }) => {
           </Link>
         </li>
         <li
-          className={`mr-8 sm:full sm:mb-4 ${
+          className={`mr-8 sm:mb-4 ${
             skills === true ? "bg-alt-background-color p-3 rounded-lg" : ""
           }`}
         >

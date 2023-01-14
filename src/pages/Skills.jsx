@@ -16,13 +16,7 @@ const Skills = ({ onProject }) => {
 
   return (
     <Card>
-      <m.div
-        className="m-[1.5rem] w-4/5 mx-auto"
-        initial={{ x: "100%" }}
-        animate={{ x: "0%" }}
-        exit={{ opacity: 1 }}
-        transition={{ duration: 0.75, ease: "easeOut" }}
-      >
+      <m.div className="m-[1.5rem] w-4/5 mx-auto">
         <div className="flex-col mb-10">
           <div className="flex justify-start items-center">
             <div className="rotate-90 w-[4%] bg-alt-text-color h-1"></div>

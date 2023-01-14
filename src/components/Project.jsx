@@ -2,7 +2,12 @@ const Project = ({ name, tags, f, img, repo }) => {
   return (
     <div className="relative  rounded-lg shadow-2xl sm:p-0 p-0">
       <div className="relative">
-        <img src={img} className="w-full h-64 object-cover" alt="image" />
+        <img
+          src={img}
+          className="w-full h-64 object-cover"
+          alt="image"
+          loading="lazy"
+        />
         <div className="absolute inset-0 bg-overlay opacity-50"></div>
       </div>
       <div className="px-5 py-5">
@@ -25,7 +30,7 @@ const Project = ({ name, tags, f, img, repo }) => {
           </div>
         </div>
         <button className="bg-title-color text-background-color py-2 px-4 rounded-lg ">
-          <a href={repo}>Repo</a>
+          <a href={repo}>Repository</a>
         </button>
       </div>
     </div>

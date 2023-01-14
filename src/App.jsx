@@ -38,6 +38,7 @@ function App() {
         skills={skills}
         onHome={homeHandler}
         onProject={projectsHandler}
+        onSkills={skillsHandler}
       ></NavBar>
       <AnimatePresence initial={false} mode={"wait"}>
         <Routes>
