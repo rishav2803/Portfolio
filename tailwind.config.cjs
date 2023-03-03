@@ -18,8 +18,12 @@ module.exports = {
       "title-color": "rgb(168 162 158)",
       "background-color": "rgb(15 23 42)",
       "alt-background-color": "rgb(51,65,85)",
-      "overlay": "rgba(0, 0, 0, 0.5)"
+      "overlay": "rgba(0, 0, 0, 0.5)",
+      "test": "#B6EADA",
     },
+    fontFamily: {
+      'jetbrains': ["JetBrains mono"]
+    }
   },
   plugins: [],
 }

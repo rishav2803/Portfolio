@@ -1,19 +1,22 @@
-import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useState, useEffect, useRef } from "react";
 import { motion as m } from "framer-motion";
-import gitimg from "../assets/github.png";
-import mailimg from "../assets/mail.png";
 
-const Hero = ({ onProject }) => {
+const Hero = ({ onActive, onNavColor }) => {
   const [typedText, setTypedText] = useState("");
-  const navigate = useNavigate();
   const text = "Rishav Thapliyal";
+  const myRef = useRef(null);
 
-  const projectsHandler = () => {
-    console.log("hello world");
-    onProject(true);
-    navigate("../projects", { replace: true });
-  };
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          onActive({ active: "hero" });
+          onNavColor(myRef.current.offsetHeight);
+        }
+      });
+    });
+    observer.observe(document.querySelector("#home"));
+  }, []);
 
   useEffect(() => {
     let index = 0;
@@ -30,7 +33,9 @@ const Hero = ({ onProject }) => {
   return (
     <m.div
       className="w-full  mx-auto flex justify-center items-center"
-      style={{ height: "76vh" }}
+      ref={myRef}
+      style={{ height: "100vh" }}
+      id="home"
     >
       <div className="flex-col">
         <span className="sm:text-2xl text-5xl text-title-color">Hi,</span>
@@ -46,25 +51,12 @@ const Hero = ({ onProject }) => {
           </p>
         </div>
         <div className="flex justify-center items-center">
-          <i class="devicon-github-original text-4xl mr-3 sm:text-3xl text-title-color"></i>
-          {/* <img
-            src={gitimg}
-            className="hover:cursor-pointer mr-3 object-contain w-10 "
-          /> */}
-          {/* <img
-            src={mailimg}
-            className="mr-2 hover:cursor-pointer  object-contain w-10"
-            alt="load man "
-          /> */}
-          <i class="devicon-linkedin-plain text-4xl sm:text-3xl text-title-color"></i>
-        </div>
-
-        <div
-          className="flex justify-center items-center"
-          onClick={projectsHandler}
-        >
-          <i className="fa fa-caret-right absolute sm:hidden right-10 bottom-[44%] text-7xl text-title-color hover:cursor-pointer hover:animate-none animate-bounce"></i>
-          {/* <i className="fa fa-caret-down block  absolute bottom-0  text-7xl text-background-color hover:cursor-pointer hover:animate-none animate-bounce"></i> */}
+          <a href="https://github.com/rishav2803" target="_blank">
+            <i class="devicon-github-original text-4xl mr-3 sm:text-3xl text-title-color"></i>
+          </a>
+          <a href="https://www.linkedin.com/feed/" target="_blank">
+            <i class="devicon-linkedin-plain text-4xl sm:text-3xl text-title-color"></i>
+          </a>
         </div>
       </div>
     </m.div>

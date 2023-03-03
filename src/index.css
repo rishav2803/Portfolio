@@ -2,18 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body{
-    font-family: 'Trirong', serif;
-    background-color: rgb(15 23 42);
-    overflow-x: hidden;
+body {
+  font-family: "Trirong", serif;
+  background-color: rgb(15 23 42);
+  overflow-x: hidden;
 }
 
 body::-webkit-scrollbar {
-  width: .25rem;
+  width: 0.25rem;
   border-radius: 12px;
 }
 body::-webkit-scrollbar-thumb {
-    background-color: #f88e8e;
+  background-color: #f88e8e;
   border-radius: 20px;
+}
+
+.card:hover .desc {
+  display: block;
+}
+.circle {
+  width: 25%;
+  margin-inline: auto;
+  aspect-ratio: 1;
+  background-color: rgb(168 162 158);
+  border-radius: 50%;
+  margin-bottom: 0.8rem;
+}
+.currPage{
+  background-color: #f88e8e;
+}
+
+.list .active{
+  color:#f88e8e;
+}
+.test{
+  border:1px solid red;
 }

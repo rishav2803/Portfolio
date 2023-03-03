@@ -1,54 +1,46 @@
-import { motion as m } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { projects } from "../projects";
 import Card from "../ui/Card";
 import Project from "../components/Project";
-import { useState } from "react";
+import { useEffect } from "react";
 
-const Projects = ({ onHome, onSkills }) => {
-  const [left, setLeft] = useState(false);
-  const [right, setRight] = useState(false);
-  const navigate = useNavigate();
-
-  function homeHandler() {
-    onHome(true);
-    navigate("/");
-  }
-
-  function skillsHandler() {
-    onSkills(true);
-    navigate("/skills");
-  }
+const Projects = ({ onActive }) => {
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          onActive({ active: "project" });
+        }
+      });
+    });
+    observer.observe(document.querySelector("#projects"));
+  }, []);
 
   return (
     <Card>
-      <m.div
-        className="w-4/5 sm:w-[90%] mx-auto  mt-4
+      <div className="w-[100%]">
+        <div className="flex-col text-3xl font-bold text-title-color mb-[4rem] sm:w-[90%] mx-auto">
+          <p>PROJECTS</p>
+          <div className="h-[2px] w-[10%] bg-alt-text-color "></div>
+        </div>
+        <div
+          className="w-4/5 sm:w-[90%] mx-auto  mt-4 min-h-screen 
         grid sm:grid-rows-4 grid-rows-2 grid-cols-2 sm:grid-cols-1 gap-4"
-      >
-        {projects.map((project) => {
-          return (
-            <Project
-              key={project.name}
-              name={project.name}
-              tags={project.tags}
-              f={project.features}
-              img={project.src}
-              repo={project.git}
-            />
-          );
-        })}
-        ;
-      </m.div>
-      <div className="">
-        <i
-          className="fa fa-caret-left sm:hidden fixed left-4 bottom-[44%] text-7xl text-title-color hover:cursor-pointer hover:animate-none animate-bounce"
-          onClick={homeHandler}
-        ></i>
-        <i
-          className="fa fa-caret-right fixed  sm:hidden right-4 bottom-[44%] text-7xl text-title-color hover:cursor-pointer hover:animate-none animate-bounce"
-          onClick={skillsHandler}
-        ></i>
+          id="projects"
+        >
+          {projects.map((project) => {
+            return (
+              <Project
+                key={project.name}
+                name={project.name}
+                tags={project.tags}
+                f={project.features}
+                img={project.src}
+                repo={project.git}
+              />
+            );
+          })}
+        </div>
       </div>
     </Card>
   );

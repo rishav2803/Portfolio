@@ -32,7 +32,7 @@ export const backend = [
         src: "devicon-nodejs-plain"
     },
     {
-        name: "Go",
+        name: "Golang",
         src: "devicon-go-original-wordmark"
     },
     {
