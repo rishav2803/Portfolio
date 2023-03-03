@@ -22,7 +22,7 @@ const Skills = ({ onProject, onActive }) => {
   return (
     <>
       <m.div
-        className=" w-full mx-auto min-h-[100vh] sm:w-[100%] grid items-center sm:mb-10 "
+        className=" w-full mx-auto min-h-[100vh] sm:w-[90%] grid items-center sm:mb-10 "
         id="skill"
       >
         <div>
