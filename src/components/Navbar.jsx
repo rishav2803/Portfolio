@@ -24,7 +24,7 @@ const NavBar = ({ color, links }) => {
         className={`
        uppercase flex items-center justify-end sm:justify-center
        sm:py-3 
-       text-title-color sm:text-sm  left-0 w-full font-jetbrains `}
+       text-title-color sm:text-xs  left-0 w-full font-jetbrains `}
       >
         {links.map((link) => {
           return (
