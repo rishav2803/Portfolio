@@ -1,5 +1,4 @@
 import { motion as m } from "framer-motion";
-import { useNavigate } from "react-router-dom";
 import { frontend, backend, lang } from "../skills";
 import Backend from "../components/Backend";
 import Frontend from "../components/Frontend";
@@ -33,7 +32,7 @@ const Skills = ({ onProject, onActive }) => {
           <div className="grid sm:gap-[3rem] grid-cols-3 sm:grid-cols-1 sm:grid-row-3">
             <Frontend frontend={frontend} />
             <Backend backend={backend}></Backend>
-            <Frontend frontend={lang} />
+            <Language language={lang} />
           </div>
         </div>
       </m.div>

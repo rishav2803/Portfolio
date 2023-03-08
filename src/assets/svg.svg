@@ -1,0 +1,11 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_4">
+   <rect stroke="#000" id="svg_1" height="52" width="54" y="166.19999" x="248.59999" fill="#0f172a"/>
+   <text stroke="#000" font-style="italic" xml:space="preserve" text-anchor="start" font-family="'JetBrains Mono'" font-size="24" id="svg_2" y="193.19999" x="263.59999" stroke-width="0" fill="#ff8383">R</text>
+   <text font-style="italic" xml:space="preserve" text-anchor="start" font-family="'JetBrains Mono'" font-size="24" id="svg_3" y="209.19999" x="269.59999" stroke-width="0" stroke="#000" fill="#ff8383">T</text>
+  </g>
+ </g>
+</svg>
