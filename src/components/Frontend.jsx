@@ -1,7 +1,7 @@
 const Frontend = ({ frontend }) => {
   return (
     <div className=" flex justify-center items-center flex-col sm:mt-0">
-      <div className="flex-col text-2xl font-bold text-title-color">
+      <div className="flex-col text-xl font-bold text-title-color">
         <p>FRONT END</p>
         <div className="h-[2px] w-[50%] bg-alt-text-color mx-auto"></div>
       </div>
