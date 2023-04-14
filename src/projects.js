@@ -6,7 +6,7 @@ import movieimg from "./assets/movie.png";
 
 export const projects = [
     {
-        name: "Tic Tac Toe Game",
+        name: "Mulitplayer Tic Tac Toe Game",
         features: [
             "Play 1v1 with other player",
             "Play with computer",

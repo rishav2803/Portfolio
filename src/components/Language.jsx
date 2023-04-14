@@ -1,7 +1,7 @@
 const Language = ({ language }) => {
   return (
     <div className=" flex justify-center items-center flex-col sm:mt-0">
-      <div className="flex-col text-3xl font-bold text-title-color">
+      <div className="flex-col text-2xl font-bold text-title-color">
         <p>OTHER LANGUAGES</p>
         <div className="h-[2px] w-[50%] bg-alt-text-color mx-auto"></div>
       </div>
@@ -9,7 +9,7 @@ const Language = ({ language }) => {
         {language.map((f) => {
           return (
             <div className="text-center">
-              <i className={`${f.src}  text-5xl sm:text-4xl mb-2`}></i>
+              <i className={`${f.src}  text-5xl sm:text-xl mb-2`}></i>
               <p className="font-jetbrains">{f.name}</p>
             </div>
           );
