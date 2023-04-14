@@ -19,7 +19,7 @@ const Projects = ({ onActive }) => {
   return (
     <Card>
       <div className="w-[100%]">
-        <div className="flex-col text-3xl font-bold text-title-color mb-[4rem] sm:w-[90%] mx-auto">
+        <div className="flex-col text-3xl sm:text-xl font-bold text-title-color mb-[4rem] sm:w-[90%] mx-auto">
           <p>PROJECTS</p>
           <div className="h-[2px] w-[10%] bg-alt-text-color "></div>
         </div>

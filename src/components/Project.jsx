@@ -22,7 +22,7 @@ const Project = ({ name, tags, f, img, repo }) => {
             className=" absolute  bg-overlay z-1 px-5 py-5 bottom-0 w-full card hover:cursor-pointer hover:mt-0 transition-all ease-in-out"
             onClick={() => setShowModal(true)}
           >
-            <h4 className="text-lg font-bold  text-title-color ">{name}</h4>
+            <h4 className="text-s font-bold  text-title-color ">{name}</h4>
           </div>
         </div>
       </div>

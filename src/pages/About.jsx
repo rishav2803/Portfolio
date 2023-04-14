@@ -18,12 +18,12 @@ export default function ({ onActive }) {
         className="min-h-[50vh] w-full sm:w-[90%] mx-auto mt-[5rem] sm:mb-10"
         id="about"
       >
-        <div className="flex-col text-3xl font-bold text-title-color mb-[4rem] ">
+        <div className="flex-col text-3xl sm:text-xl font-bold text-title-color mb-[4rem] ">
           <p>ABOUT ME</p>
           <div className="h-[2.9px] w-[10%] bg-alt-text-color "></div>
         </div>
         <div className="w-[70%] mx-auto  flex-cols justify-center items-center sm:w-full">
-          <p className="leading-10 text-text-color font-jetbrains mb-[2rem]">
+          <p className="leading-10 text-text-color font-jetbrains mb-[2rem] sm:text-s sm:leading-8">
             Hello! My name is{" "}
             <span className="font-bold text-text-color">Rishav Thapliyal</span>,
             and I am a{" "}

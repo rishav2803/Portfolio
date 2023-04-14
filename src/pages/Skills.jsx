@@ -25,7 +25,7 @@ const Skills = ({ onProject, onActive }) => {
         id="skill"
       >
         <div>
-          <div className="mb-[4rem] flex-col text-3xl font-bold text-title-color w-4/5 mx-auto sm:w-[100%] ">
+          <div className="mb-[4rem] flex-col text-3xl sm:text-xl font-bold text-title-color w-4/5 mx-auto sm:w-[100%] ">
             <p>SKILLS</p>
             <div className="h-[2.5px] w-[4%] sm:w-[10%] bg-alt-text-color "></div>
           </div>
