@@ -7,8 +7,8 @@ export const projects = [
   {
     name: "Mulitplayer TTT ",
     features: [
-      "Developed front-end using React.JS.",
-      "Developed back-end using Go(Golang).",
+      "Developed front-end user experience using React.JS.",
+      "Developed back-end using Go(Golang) integrated with gorilla websockets.",
       "Implemented the React Router DOM to allow nested RESTful routing.",
       "Provided user with 3 modes of playing (Tournament,multiplayer,vsComputer)",
     ],
