@@ -8,7 +8,7 @@
 }
 .modal_container {
   width: min(1000px, 90%);
-  height: 50vh;
+  height: 60vh;
   z-index: 3;
   position: fixed;
   background-color: rgb(51, 65, 85);
@@ -94,6 +94,7 @@
   .modal_container {
     grid-template-columns: repeat(1, 1fr);
     font-size: 0.7rem;
+    height: 50vh;
   }
 
   .modal_title_container {
