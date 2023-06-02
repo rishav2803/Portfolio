@@ -54,7 +54,7 @@ const Hero = ({ onActive, onNavColor }) => {
           <a href="https://github.com/rishav2803" target="_blank">
             <i class="devicon-github-original text-4xl mr-3 sm:text-3xl text-title-color"></i>
           </a>
-          <a href="https://www.linkedin.com/feed/" target="_blank">
+          <a href="https://www.linkedin.com/in/rishav-thapliyal/" target="_blank">
             <i class="devicon-linkedin-plain text-4xl sm:text-3xl text-title-color"></i>
           </a>
         </div>
