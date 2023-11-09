@@ -1,20 +1,29 @@
-import ticimg from "./assets/tic.png";
+import ticimg from "./assets/aa.png";
+import taskerImg from "./assets/aaa.png";
 import bankimg from "./assets/bank.png";
 import chatimg from "./assets/chatapp.png";
 import movieimg from "./assets/movie.png";
 
 export const projects = [
   {
-    name: "Mulitplayer TTT ",
+    name: "Taskerrr",
     features: [
-      "Developed front-end user experience using React.JS.",
-      "Developed back-end using Go(Golang) integrated with gorilla websockets.",
-      "Implemented the React Router DOM to allow nested RESTful routing.",
-      "Provided user with 3 modes of playing (Tournament,multiplayer,vsComputer)",
+      "Provide a easy and manageable way for the user to handle their task",
+      "Provides three different categories to put their task namely todo,Doing,Done",
     ],
-    tags: ["ReactJs", "Typescript", "Go"],
+    tags: ["ReactJs", "Firebase"],
+    src: taskerImg,
+    git: "https://github.com/rishav2803/Taskerr",
+  },
+  {
+    name: "Game_Zone",
+    features: [
+      "Game-Zone offers a variety of classic games like tic-tac-toe and rock-paper-scissors.",
+      "Users can enjoy different gaming modes such as playing against the computer, or competing with friends in multiplayer mode.",
+    ],
+    tags: ["ReactJs", "Typescript", "Go", "ChakraUi"],
     src: ticimg,
-    git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe",
+    git: "https://github.com/rishav2803/Game_Zone",
   },
   {
     name: "WeTalk",
@@ -54,4 +63,3 @@ export const projects = [
     git: "https://github.com/rishav2803/Multiplayer_Tic_Tac_Toe",
   },
 ];
-

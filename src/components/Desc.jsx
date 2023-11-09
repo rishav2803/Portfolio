@@ -1,4 +1,3 @@
-import { useState } from "react";
 import "./Project.css";
 
 export default function Desc({img,onModal,name,tags,desc,repo}) {
@@ -38,7 +37,7 @@ export default function Desc({img,onModal,name,tags,desc,repo}) {
               </ul>
             </div>
             <div className="footer">
-              <a className="code" href={repo}>
+              <a className="code" target="_blank" href={repo}>
                 Code
               </a>
             </div>
